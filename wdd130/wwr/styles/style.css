@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+#logo_link{
+    padding-top: 5px;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,22 +11,39 @@
 
 nav {
     text-align: center;
+    font-family:'IM Fell French Canon';
+}
+
+.home-title{
+    margin-top: 10px;
+}
+
+nav a{
+    padding: 35px;
 }
 
 #hero-msg h1{
     text-align: center;
+    font-family:'IM Fell French Canon';
 }
 
 #hero-msg h4 {
     text-align: center;
+    font-family:'IM Fell French Canon';
 }
 
 .button-box {
     text-align: center;
+    font-family:'IM Fell French Canon';
+}
+
+main section img{
+    box-sizing: border-box;
 }
 
 main section {
     text-align: center;
+   font-family: Merriweather-Black, Helvetica, sans-serif;
 }
 
 #background {
@@ -29,11 +52,19 @@ main section {
 
 body {
     background-color: #729343;
+    font-family: Merriweather-Black, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
 }
 
 header {
     background-color: #965C4A;
     color: #4a5f96;
+    font-family:'IM Fell French Canon';
 
 }
 
@@ -45,11 +76,17 @@ nav a:hover {
 .book {
     background-color: #729343;
     color: black;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join {
     background-color: #096A2E;
     color: black;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 
 }
 
@@ -61,18 +98,49 @@ nav a:hover {
     background-color: #096A2E;
 }
 
+.icon{
+    padding-top: 10px;
+}
+
+.rivers-card{
+    margin: 200px 0;
+    border: 10px solid black;
+}
+
+.camping-card{
+    margin: 200px 0;
+    border: 10px solid black;
+}
+
+.rapids-card{
+    margin: 200px 0;
+    border: 10px solid black;
+}
+
 #background{
     background-color: #729343;
 }
 
 .msg {
     background-color: #096A2E;
+    font-family:'IM Fell French Canon';
+    padding: 35px;
+}
+
+.msg p{
+    padding-bottom: 15px;
 }
 
 footer {
     text-align: center;
     background-color: #965C4A;
     color: black;
+    font-family:'IM Fell French Canon';
+    padding: 25px 50px;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
 
 footer a:hover {
@@ -82,4 +150,5 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+    font-family:'IM Fell French Canon';
 }
