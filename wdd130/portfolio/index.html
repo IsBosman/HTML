@@ -4,76 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
     <title>The Portfolio</title>
 </head>
-<body>
+<body class="body">
     <div id="content">
         <header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
             <a id="logo_link" href="index.html">
-            <img src="images/logo.png" class="logo" style="height: 60px;width: 60px;"
-            alt="ThePortfolio Logo">
+            <img class="logo" src="images/logo.png" alt="ThePortfolio Logo">
             </a>
-            <nav>
+            <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="wip.html">WIPS</a>
                 <a href="bio.html">Bio</a>
             </nav>
         </header>
-        <h1>My Portfolio</h1>
-    <main>
-        <section>
-        <img src="images/Watch High Contrast.jpg" alt="watch" style="height: 500px; width: auto;">
-        <img src="images/Sunset - 1.jpg" alt="Sunset" style="height: 500px; width: auto;">
-        <h3>Watch</h3>
-            <p style="font-size: larger;">
+        <h1 class="title" style="margin-top: .8%; font-family: IM Fell French Canon SC;">My Portfolio</h1>
+    <main class="home-grid">
+        <section class="section1" style="margin-top: 2%;">
+        <div class="image1">
+            <img class="image__img1" src="images/WatchHighContrast.jpg" alt="watch">
+            <div class="image_overlay1">
+                <div class="image_title1">Watch</div>
+                <p class="image_description1">
                 My first big project, This was my first project where I really had to worry about topology and making sure my faces were pretty AND functional.
-                 The biggest downfall to doing this project is that I scoured the internet for reference images and now I get ads for watches everywhere.
-            </p>
-            <h3>Sunset</h3>
-            <p style="font-size: larger;">
-                Sunset
-I really wanted to do a sunset. At first I wanted to do one over a field or behind a mountain but while I was playing with it I decided water looked really cool in this scene,
- the main goal was to get the perfect camera angle to catch a reflection path from the camera to the sun, in order to do this I had to animate the water and move my camera to
-  get the perfect angle and shot. At one point I had the money shot and I accidentally started the animation again so the frame I was on moved then in my panic to fix it
-   I accidentally moved the camera so I lost the spot, that was sad..
-            </p>
+                The biggest downfall to doing this project is that I scoured the internet for reference images and now I get ads for watches everywhere.
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="image__img" src="images/Sunset-1.jpg" alt="Sunset">
+            <div class="image_overlay">
+                <div class="image_title"> Sunset</div>
+                <p class="image_description">
+                    I really wanted to do a sunset. At first I wanted to do one over a field or behind a mountain but while I was playing with it I decided water looked really cool in this scene,
+                the main goal was to get the perfect camera angle to catch a reflection path from the camera to the sun, in order to do this I had to animate the water and move my camera to
+                get the perfect angle and shot. At one point I had the money shot and I accidentally started the animation again so the frame I was on moved then in my panic to fix it
+                I accidentally moved the camera so I lost the spot, that was sad..
+                </p>
+            </div>
+        </div>
         </section>
-        <section>
-            <img src="images/Low Poly Iso 01.jpg" alt="Low Poly Isometric Room" style="height: 500px; width: auto;">
-            <img src="images/Real Iso.jpg" alt="Realistic Isometric Room" style="height: 500px; width: auto;">
-            <h3>Low Poly</h3>
-            <p style="font-size: larger;">
-                Isometric rooms are awesome, if you google isometric rooms then you'll come up with a load of cool stuff that people have done, since this was my second project it doesn't have
-                a lot of the flair I would have liked to have had, but it was a fun project and it was fun to put random objects and ideas into the space.
-            </p>
-            <h3>Real Poly</h3>
-            <p style="font-size: larger;">
-                After messing around with style and form, I've found that I prefer projects that lean towards realism rather than having a toon feel to them. I had a really fun time modeling 
+
+        <section class="section2" style="margin-top: 2%;">
+            <div class="image2">
+                <img class="image__img2" src="images/LowPolyIso01.jpg" alt="Low Poly">
+                <div class="image_overlay2">
+                    <div class="image_title2">Low Poly Iso</div>
+                    <p class="image_description2">
+                        Isometric rooms are awesome, if you google isometric rooms then you'll come up with a load of cool stuff that people have done, since this was my second project it doesn't have
+                        a lot of the flair I would have liked to have had, but it was a fun project and it was fun to put random objects and ideas into the space.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image3">
+                <img class="image__img3" src="images/RealIso.jpg" alt=" Real Iso">
+                <div class="image_overlay3">
+                    <div class="image_title3">Real Iso</div>
+                    <p class="image_description3">
+                        After messing around with style and form, I've found that I prefer projects that lean towards realism rather than having a toon feel to them. I had a really fun time modeling 
                 the guitar and doing the cloth for the bedding was an interesting experience.
-            </p>
+                    </p>
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="images/Spiral Torus - 1.jpg" alt="Torus" style="height: 500px; width: auto;">
-            <img src="images/PiggyBank.jpg" alt="Pig" style="height: 500px; width: auto;">
-            <h3>Torus</h3>
-            <p style="font-size: larger;">
-                This was just something that I was playing with that I though looked pretty neat, other than the sphere in the center, there are no rounded edges.
-            </p>
-            <h3>Pig</h3>
-            <p style="font-size: larger;">
-                A simple practice project to mess with round objects as well as super simple sculpting practice. Also it made my sister happy.
-            </p>
+        <section class="section3" style="margin-top: 2%;">
+            <div class="image4">
+                <img class="image__img4" src="images/SpiralTorus-1.jpg" alt=" Torus">
+                <div class="image_overlay4">
+                    <div class="image_title4">Torus</div>
+                    <p class="image_description4">
+                        This was just something that I was playing with that I though looked pretty neat,
+                         other than the sphere in the center, there are no rounded edges.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image5">
+                <img class="image__img5" src="images/PiggyBank.jpg" alt=" Pig">
+                <div class="image_overlay5">
+                    <div class="image_title5">Piggy Bank</div>
+                    <p class="image_description5">
+                        A simple practice project to mess with round objects as well as super simple sculpting practice.
+                         Also it made my sister happy.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="images/PostRoomGodRay.jpg" alt="Godrays" style="height: 500px; width: auto;">
-            <h3>Godrays</h3>
-            <p style="font-size: larger;">
-                This project was an experiment in lighting a scene in different ways, techincally it's still a WIP, but it's so close what I decided to throw it in, the main focus I wanted to
-                work with are the rays coming through the window which are called godrays, they're great for a dusty room or for some super atmospheric or dramatic lighting.
-            </p>
+        <section class="section4" style="margin-top: 2%;">
+            <div class="image6">
+                <img class="image__img6" src="images/PostRoomGodRay.jpg" alt="Godrays">
+                <div class="image_overlay6">
+                    <div class="image_title6">Godrays</div>
+                    <p class="image_description6">
+                        This project was an experiment in lighting a scene in different ways, techincally it's still a WIP, but it's so close what I decided to throw it in, the main focus I wanted to
+                    work with are the rays coming through the window which are called godrays, they're great for a dusty room or for some super atmospheric or dramatic lighting.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>ThePortfolio &copy; 2023 - Isaiah Boswell</p>
         <p><a href="site-plan.html">Site Plan</a></p>
         <div>
