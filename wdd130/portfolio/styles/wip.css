@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+.logo {
+    display: block;
+    margin: auto;
+    height: 200px; width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #DB9065;
+    padding: 2%;
+
+}
+
+.nav a {
+    padding: 35px
+    
+  }
+
+  .title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #DB9065;
+    color: black;
+    font-family:'IM Fell French Canon';
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    background-color: #FFFAF1;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+footer a:hover {
+    background-color: #FFFAF1;
+    color: black;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family:'IM Fell French Canon';
+}
+
+
+.engine{
+    margin: 200px 0;
+    grid-row: 1 /span 2;
+    grid-column: 2 /span 2;
+    margin-right: 500px;
+}
+
+.mountain{
+    margin: 200px 0;
+    grid-row: 2 /span 2;
+    grid-column: 2 /span 2;
+}
+
+#engine:hover {
+    opacity: 0.7;
+}
+
+#engine {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mountain:hover {
+    opacity: 0.7;
+}
+
+#mountain {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#jet:hover {
+    opacity: 0.7;
+}
+
+#jet {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#rose:hover {
+    opacity: 0.7;
+}
+
+#rose {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#tower:hover {
+    opacity: 0.7;
+}
+
+#tower {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+    .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.jet{
+    margin: 200px 0;
+    grid-row: 3 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.rose {
+    margin: 200px 0;
+    grid-row: 4 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.tower {
+    margin: 200px 0;
+    grid-row: 5 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.enginetxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 1 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.mountaintxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 2 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.jettxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 3 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.rosetxt {
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 4 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.towertxt {
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 5 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.general-info1{
+    grid-row: 5/ span 2;
+    grid-column: auto;
+}
+
+.card-img {
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    height: 250px; width: auto;
+}
+
+.secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+}
+
+.info1 {
+    background-color: #FFFAF1;
+    font-family:'IM Fell French Canon';
+    padding: 35px;
+    grid-row: 5 /span 1;
+    grid-column: 3 /span 6;
+}
+
+.info1 p{
+    padding-bottom: 15px;
+}
+
+.info2 {
+    background-color: #FFFAF1;
+    font-family:'IM Fell French Canon';
+    padding: 35px;
+    grid-row: 8 /span 1;
+    grid-column: 3 /span 6;
+}
+
+.info2 p{
+    padding-bottom: 15px;
+}
+
+#h2 {
+    text-align: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+.open {
+    display: flex;
+    justify-content: center;
+}

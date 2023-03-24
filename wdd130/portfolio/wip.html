@@ -5,63 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIP</title>
+    <link rel="stylesheet" href="styles/wip.css">
 </head>
 <body>
     <div id="content">
         <header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-            <a id="logo_link" href="index.html">
-            <img src="images/logo.png" class="logo" style="height: 60px;width: 60px;" alt="ThePortfolio Logo" >
+            <a id="logo" href="index.html">
+            <img src="images/logo.png" class="logo""
+            alt="The Portfolio Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="wip.html">WIPS</a>
-                <a href="bio.html">Bio</a>
+                <a href="site-plan-rafting.html">Bio</a>
             </nav>
         </header>
-        <h1>Works In Progress</h1>
-    <main>
-        <section>
-        <img src="images/engine.png" alt="Engine Room" style="height: 500px; width: auto;">
-        <p style="font-size: larger;">
-            I've had an itch to do something sci-fi since I haven't done anything in that area yet and I thought doing a cool reactor type spaceship engine room would be fun, the goal is to have the ball
-            in the center be a sun type thing with energy particle things being sucked into the machines on the top and bottom, so far I've got the meat of the scene I just need to add more details to 
-            everything and then get to the texturing and compositing.
-        </p>
-        <img src="images/jetwip.png" alt="Jet" style="height: 500px; width: auto;">
-            <p style="font-size: larger;">
+        <div id="myNav" class="overlay">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="bio.html">About</a>
+              <a href="index.html">Home</a>
+              <a href="wip.html">Works In Progress</a>
+              <a href="#">Commissions</a>
+            </div>
+          </div>
+          
+          
+          <span class="open" style="font-size:30px;cursor:pointer;font-family: IM Fell French Canon SC;" onclick="openNav()">&#9776; open</span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script>
+
+        <h1 class="title" style="margin-top: .8%; font-family: IM Fell French Canon SC;">Works In Progress</h1>
+        <main class="secondary-grid">
+        <section class="engine">
+            <img id="engine" class="card-img" src="images/engine.png" alt="engine room">
+        </section>
+        <section class="mountain">
+            <img id="mountain" class="card-img" src="images/mountainscapewip.png" alt="mountainscape">
+        </section>
+        <section class="jet">
+            <img id="jet" class="card-img" src="images/jetwip.png" alt="jet">
+        </section>
+        <section class="rose">
+            <img id="rose" class="card-img" src="images/rosewip.png" alt="rose">
+        </section>
+        <section class="tower">
+            <img id="tower" class="card-img" src="images/towerwip.png" alt="tower">
+        </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        <section class="enginetxt">
+            <h2 style="font-family: IM Fell French Canon SC;">
+                Engine Room
+            </h2>
+            <p>
+                I've had an itch to do something sci-fi since I haven't done anything in that area yet and I thought doing a cool reactor type spaceship engine room would be fun, the goal is to have the ball
+                in the center be a sun type thing with energy particle things being sucked into the machines on the top and bottom, so far I've got the meat of the scene I just need to add more details to 
+                everything and then get to the texturing and compositing.
+            </p>
+        </section>
+        <section class="mountaintxt">
+            <h2 style="font-family: IM Fell French Canon SC;">
+                Mountainscape
+            </h2>
+            <p>
+                Landscapes and pretty views take up most of my camera roll, for this project I'm going for a calm meadow during the day, I'm also going to do a version with a sunset behind one of the mountains.
+            </p>
+        </section>
+        <section class="jettxt">
+            <h2 style="font-family: IM Fell French Canon SC;">
+                Jet
+            </h2>
+            <p>
                 I'm probably going to throw this one out, I started this project before I learned about having a clean model and this model is definitely not clean, so I'll update this when I have a prettier 
                 jet to show.
             </p>
         </section>
-        <section>
-            <img src="images/mountainscapewip.png" alt="mountainscape" style="height: 500px; width: auto;">
-            <p style="font-size: larger;">
-                Landscapes and pretty views take up most of my camera roll, for this project I'm going for a calm meadow during the day, I'm also going to do a version with a sunset behind one of the mountains.
-            </p>
-            <img src="images/rosewip.png" alt="Rose" style="height: 500px; width: auto;">
-            <p style="font-size: larger;">
+        <section class="rosetxt">
+            <h2 style="font-family: IM Fell French Canon SC;">
+                Rose
+            </h2>
+            <p>
                 I had a lot of fun with this one, right now I'm working on texturing the flower so it looks real and eventually I want to animate it so it blooms.
             </p>
         </section>
-        <section>
-            <img src="images/towerwip.png" alt="Tower" style="height: 500px; width: auto;">
-            <p style="font-size: larger;">
+        <section class="towertxt">
+            <h2 style="font-family: IM Fell French Canon SC;">
+                Tower
+            </h2>
+            <p>
                 As a fantasy lover, a classic fantasy tower is required, I want to make this a super atmospheric scene so the focus isn't on the building as much as it's on the scene lighting and feel.
+
             </p>
         </section>
+
+    
     </main>
     <footer>
-        <p>ThePortfolio &copy; 2023 - Isaiah Boswell</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <div>
+        <p>Gilded Inflatables &copy; 2023 - Isaiah Boswell</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
+    
     </footer>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("tower");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+                // Get the modal
+                var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("mountain");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+                // Get the modal
+                var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("engine");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+                // Get the modal
+                var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("rose");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+                // Get the modal
+                var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("jet");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
 </body>
 </html>
