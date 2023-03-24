@@ -19,8 +19,33 @@
                 <a href="bio.html">Bio</a>
             </nav>
         </header>
+        <div id="myNav" class="overlay">
+            
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="bio.html">About</a>
+    <a href="index.html">Home</a>
+    <a href="wip.html">Works In Progress</a>
+    <a href="#">Commissions</a>
+  </div>
+</div>
+
+
+<span class="open" style="font-size:30px;cursor:pointer;font-family: IM Fell French Canon SC;" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+
         <h1 class="title" style="margin-top: .8%; font-family: IM Fell French Canon SC;">My Portfolio</h1>
-    <main class="home-grid">
+    <main class="main">
         <section class="section1" style="margin-top: 2%;">
         <div class="image1">
             <img class="image__img1" src="images/WatchHighContrast.jpg" alt="watch">
