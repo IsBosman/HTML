@@ -6,6 +6,8 @@
     height: 200px; width: auto;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +41,7 @@ footer {
 }
 
 body {
-    background-color: #FFFAF1;
+    background-color: #F2F7F2;
     font-family: Arial;
     padding: 0;
     margin: 0;
@@ -49,10 +51,6 @@ footer .social img{
     padding-top: 15px;
 }
 
-footer a:hover {
-    background-color: #FFFAF1;
-    color: black;
-}
 
 footer p {
     font-size: 1.2em;

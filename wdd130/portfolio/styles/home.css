@@ -7,10 +7,15 @@
 }
 
 .body {
+    min-width: 100%;
+    overflow-x: hidden;
     background-color: #F2F7F2;
+}
+
+.main1 {
     display: flex;
-    justify-content: center;
-    width: inherit;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -36,7 +41,7 @@
     width: 70%;
     justify-content: center;
     justify-content: space-between;
-    column-gap: 1em;
+    column-gap: 8px;
 }
 
 .image1 {
@@ -333,10 +338,15 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
     background-color: #DB9065;
+    color: black;
+    font-family:'IM Fell French Canon';
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .overlay {
