@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIP</title>
+    <link rel="stylesheet" href="styles/bio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="body">
     <div id="content">
         <header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-            <a id="logo_link" href="index.html">
-            <img src="images/logo.png" class="logo" style="height: 60px;width: 60px;" alt="ThePortfolio Logo" >
+            <a id="logo" href="index.html">
+            <img src="images/logo.png" class="logo"
+            alt="The Portfolio Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -18,23 +21,63 @@
                 <a href="bio.html">Bio</a>
             </nav>
         </header>
-        <h1>Works In Progress</h1>
-    <main>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Home</a>
+              <a href="#">Works In Progress</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          
+          <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script>
+
+
+        <main>
+            <h1 class="heading"> Bio</h1>
+            <div class="card">
+                <img src="images/Biopic.jpg" alt="John" style="width:100%">
+                <h1>Isaiah Boswell</h1>
+                <p class="title">Beginner 3D artist and Software Engineer</p>
+                <p>Brigham Young University-Idaho</p>
+                <p><button>Contact</button></p>
+              </div>
+            
+
+
+
+
+
+
+          <div class="bio">
+        <p class="biotxt" style="font-size: larger;">
+            Hi, I'm Isaiah! I started learning 3d art about a month and a half ago, with my first project being a donut animation!
+             I'm twenty two years old and the oldest of six children. I can't really claim to be from any specific place
+              as I've lived in Mississippi, Utah, Kansas, Ohio, Colorado, England, and now Idaho.
+             I enjoy sci-fi and fantasy, David Weber, Robin Hobb, Brandon Sanderson, Issac Asimov, which is where much of my work will be pointed in the future!
+        </p>
+          </div>
+          
+          
         
-        <section>
-            <img src="images/Biopic.jpg" alt="Family" style="height: 500px; width: auto;">
-            <p style="font-size: larger;">
-                Hi, I'm Isaiah! I started learning 3d art about a month and a half ago, with my first project being a donut animation!
-                 I'm twenty two years old and the oldest of six children. I can't really claim to be from any specific place
-                  as I've lived in Mississippi, Utah, Kansas, Ohio, Colorado, England, and now Idaho.
-                 I enjoy sci-fi and fantasy, David Weber, Robin Hobb, Brandon Sanderson, Issac Asimov, which is where much of my work will be pointed in the future!
-            </p>
-        </section>
+    
     </main>
     <footer>
-        <p>ThePortfolio &copy; 2023 - Isaiah Boswell</p>
+        <p>Gilded Inflatables &copy; 2023 - Isaiah Boswell</p>
         <p><a href="site-plan.html">Site Plan</a></p>
-        <div>
+        <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
@@ -42,7 +85,14 @@
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
+    
     </footer>
     </div>
+
+
+
+
+    
 </body>
 </html>
+

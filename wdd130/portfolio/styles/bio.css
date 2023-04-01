@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 200px; width: auto;
+}
+
+.heading {
+    text-align: center;
+    font-family: IM Fell French Canon SC;
+}
+
+.body {
+    font-family: Arial;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .biotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    align-content: center;
+    align-items: center;
+
+  }
+
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #DB9065;
+    padding: 2%;
+
+}
+
+.nav a {
+    padding: 35px
+    
+  }
+
+body {
+    background-color: #F2F7F2;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #DB9065;
+    color: black;
+    font-family:'IM Fell French Canon';
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer .social img{
+    padding-top: 15px;
+}
+
+
+footer p {
+    font-size: 1.2em;
+    font-family:'IM Fell French Canon';
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .open {
+    display: flex;
+    justify-content: center;
+    font-family: IM Fell French Canon SC;
+}
