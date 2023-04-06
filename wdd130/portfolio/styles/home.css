@@ -24,25 +24,20 @@
     text-align: center;
 }
 
-.nav {
+.headtitle {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: #DB9065;
-}
-
-.nav a {
-  padding: 35px
-  
+    flex-direction: column;
+    align-items: center;
+    font-family: IM Fell French Canon SC;
 }
 
 .section1 {
     display: flex;
-    width: 70%;
     justify-content: center;
     justify-content: space-between;
-    column-gap: 8px;
+    column-gap: 5%;
 }
+
 
 .image1 {
     width: 288px;
@@ -162,10 +157,9 @@
 
 .section2 {
     display: flex;
-    width: 70%;
     justify-content: center;
     justify-content: space-between;
-    column-gap: 1em;
+    column-gap: 5%;
 }
 
 .image3 {
@@ -322,10 +316,9 @@
 
 .section3 {
     display: flex;
-    width: 70%;
     justify-content: center;
     justify-content: space-between;
-    column-gap: 1em;
+    column-gap: 5%;
     
     
 }
@@ -333,21 +326,9 @@
 .section4 {
     display: flex;
     justify-content: center;
-    margin: auto;
-    width: 50%;
+    justify-content: space-between;
 }
 
-.footer {
-    text-align: center;
-    background-color: #DB9065;
-    color: black;
-    font-family:'IM Fell French Canon';
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .overlay {
     height: 100%;
@@ -402,4 +383,433 @@
 .open {
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: IM Fell French Canon SC;
+}
+
+
+.heading {
+    text-align: center;
+    font-family: IM Fell French Canon SC;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .biotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    align-content: center;
+    align-items: center;
+
+  }
+
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #DB9065;
+    padding: 2%;
+
+}
+
+.nav a {
+    padding: 35px
+    
+  }
+
+
+footer {
+    text-align: center;
+    background-color: #DB9065;
+    color: black;
+    font-family:'IM Fell French Canon';
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer .social img{
+    padding-top: 15px;
+}
+
+
+footer p {
+    font-size: 1.2em;
+    font-family:'IM Fell French Canon';
+}
+
+
+
+
+
+  .title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+
+.engine{
+    margin: 200px 0;
+    grid-row: 1 /span 2;
+    grid-column: 2 /span 2;
+    margin-right: 500px;
+}
+
+.mountain{
+    margin: 200px 0;
+    grid-row: 2 /span 2;
+    grid-column: 2 /span 2;
+}
+
+#engine:hover {
+    opacity: 0.7;
+}
+
+#engine {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mountain:hover {
+    opacity: 0.7;
+}
+
+#mountain {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#jet:hover {
+    opacity: 0.7;
+}
+
+#jet {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#rose:hover {
+    opacity: 0.7;
+}
+
+#rose {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#tower:hover {
+    opacity: 0.7;
+}
+
+#tower {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+    .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.jet{
+    margin: 200px 0;
+    grid-row: 3 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.rose {
+    margin: 200px 0;
+    grid-row: 4 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.tower {
+    margin: 200px 0;
+    grid-row: 5 /span 2;
+    grid-column: 2 /span 2;
+}
+
+.enginetxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 1 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.mountaintxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 2 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.jettxt{
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 3 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.rosetxt {
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 4 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.towertxt {
+    margin: 200px 0;
+    border: 3px solid black;
+    grid-row: 5 /span 2;
+    grid-column: 4 /span 6;
+    text-align: center;
+}
+
+.general-info1{
+    grid-row: 5/ span 2;
+    grid-column: auto;
+}
+
+.card-img {
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    height: 250px; width: auto;
+}
+
+.secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+}
+
+.info1 {
+    background-color: #FFFAF1;
+    font-family:'IM Fell French Canon';
+    padding: 35px;
+    grid-row: 5 /span 1;
+    grid-column: 3 /span 6;
+}
+
+.info1 p{
+    padding-bottom: 15px;
+}
+
+.info2 {
+    background-color: #FFFAF1;
+    font-family:'IM Fell French Canon';
+    padding: 35px;
+    grid-row: 8 /span 1;
+    grid-column: 3 /span 6;
+}
+
+.info2 p{
+    padding-bottom: 15px;
+}
+
+#h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: #DB9065;
+        padding: 2%;
+    
+    }
+    
+    .nav a {
+        padding: 35px
+        
+      }
+
+      .image1 {
+        width: 144px;
+        height: 150px;
+        position: relative;
+        display: flex;
+        box-shadow: 5px 5px 10px rgb(46, 44, 44);
+    }
+    
+    .image__img1 {
+        display: flex;
+        height: 100%;
+        width: auto;
+        position: relative;
+    }
+    
+    .image_overlay1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 144px;
+        height: 150px;
+        background: rgba(0, 0, 0, .6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+        text-align: center;
+        font-family: Arial;
+    }
+    
+    .image_overlay1:hover {
+        opacity: 1;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        background-color: #F2F7F2;
+        width: fit-content;
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        column-gap: 5%;
+    }
+
+    .image_description1 {
+        width: 144px;
+        height: 150px;
+    }
+
 }
